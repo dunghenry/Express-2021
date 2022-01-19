@@ -1,0 +1,19 @@
+<form action="/api/v1/store" method="POST">
+    <div class="form-group">
+      <label for="fullName">Họ và tên : </label>
+      <input type="text" class="form-control" id="fullName" name="fullName" aria-describedby="emailHelp" placeholder="Nhập họ và tên của bạn..." required> 
+    </div>
+    <div class="form-group">
+      <label for="age">Tuổi : </label>
+      <input type="number" class="form-control" id="age" name="age" placeholder="Nhập tuổi của bạn..." required>
+    </div>
+    <div class="form-group">
+      <label for="address">Địa chỉ : </label>
+      <input type="text" class="form-control" id="address" name="address" placeholder="Nhập địa chỉ bạn sinh sống..." required>
+    </div>
+    <div class="form-group">
+      <label for="avatarUrl">URL avatar : </label>
+      <input type="text" class="form-control" id="avatarUrl" name="avatarUrl" placeholder="Nhập url avatar của bạn" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

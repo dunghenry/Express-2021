@@ -1,0 +1,19 @@
+<form action="/api/v1/<%=user._id%>?_method=PUT" method="POST">
+    <div class="form-group">
+      <label for="fullName">Họ và tên : </label>
+      <input type="text" class="form-control" id="fullName" name="fullName" value="<%=user.fullName%>" required> 
+    </div>
+    <div class="form-group">
+      <label for="age">Tuổi : </label>
+      <input type="number" class="form-control" id="age" name="age" value="<%=user.age%>" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Địa chỉ : </label>
+      <input type="text" class="form-control" id="address" name="address" value="<%=user.address%>" required>
+    </div>
+    <div class="form-group">
+      <label for="avatarUrl">URL avatar : </label>
+      <input type="text" class="form-control" id="avatarUrl" name="avatarUrl" value="<%=user.avatarUrl%>" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu lại</button>
+  </form>
